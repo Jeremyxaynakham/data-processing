@@ -1,3 +1,5 @@
+  //alert(test);
+  
   //https://tinyurl.com/dynamic-html-checker
     document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
       
@@ -12,3 +14,8 @@
             x.className = "topnav";
         }
     }   
+
+    let myDate = new Date();
+    let myYear = myDate.getFullYear();
+    document.getElementById("copyright").innerHTML = myYear;
+    console.log(myYear);
